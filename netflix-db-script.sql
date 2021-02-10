@@ -277,10 +277,21 @@ CREATE TABLE `netflix`.`likes` (
     ON UPDATE NO ACTION);
 
 
+CREATE TABLE `netflix`.`genres_materials` (
+  `genre_name` VARCHAR(45) NOT NULL,
+  `material_title` VARCHAR(256) NOT NULL,
+  PRIMARY KEY (`genre_name`, `material_title`),
+  UNIQUE INDEX `genre_name_material_title_UNIQUE` (`genre_name` ASC, `material_title` ASC),
+  INDEX `material_title_genres_materials_idx` (`material_title` ASC),
+  INDEX `genre_name_genres_materials_idx` (`genre_name` ASC),
+  CONSTRAINT `genre_name_genres_materials`
+    FOREIGN KEY (`genre_name`)
+    REFERENCES `netflix`.`genres` (`name`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `material_title_genres_materials`
+    FOREIGN KEY (`material_title`)
+    REFERENCES `netflix`.`materials` (`title`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
 
-
-
-
-    
-    
-    
