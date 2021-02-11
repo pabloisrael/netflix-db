@@ -1,0 +1,118 @@
+
+
+---------------------------------------------
+Crear accounts
+---------------------------------------------
+
+INSERT INTO `netflix`.`accounts` (`email`, `password`) VALUES ('pablo@gmail.com', '12345678');
+
+---------------------------------------------
+Crear profiles
+---------------------------------------------
+
+INSERT INTO `netflix`.`profiles` (`name`, `email`, `language`, `subtitle_preference`) VALUES ('pablo', 'pablo@gmail.com', 'en', 'en');
+INSERT INTO `netflix`.`profiles` (`name`, `email`, `language`, `subtitle_preference`) VALUES ('luciano', 'pablo@gmail.com', 'es', 'es');
+
+---------------------------------------------
+Crear profiles
+---------------------------------------------
+
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('accion');
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('aventura');
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('romance');
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('suspenso');
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('terror');
+INSERT INTO `netflix`.`genres` (`name`) VALUES ('comedia');
+
+---------------------------------------------
+Crear materials
+---------------------------------------------
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli1', '2018', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli2', '2018', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli3', '2018', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli4', '2018', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli5', '2020', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli6', '2020', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli7', '2020', 'alguna descripción');
+
+
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie1', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie2', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie3', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie4', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie5', '2020', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie6', '2020', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('serie7', '2020', 'alguna descripción');
+
+
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini-serie1', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini-serie2', '2019', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini-serie3', '2017', 'alguna descripción');
+INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini-serie4', '2020', 'alguna descripción');
+
+---------------------------------------------
+Crear peliculas
+---------------------------------------------
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli1', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli2', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli3', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli4', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli5', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli6', '120');
+INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli7', '120');
+
+
+
+---------------------------------------------
+Crear series
+---------------------------------------------
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie1');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie2');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie3');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie4');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie5');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie6');
+INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie7');
+
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie1');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie2');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie3');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie4');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie5');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie6');
+INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie7');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+
+
+---------------------------------------------
+Crear mini-series
+---------------------------------------------
+INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie1');
+INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie2');
+INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie3');
+INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie4');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie1', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie1', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie2', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie2', 'miniseries', '90', 'descripcion');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie4', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'miniseries', '90', 'descripcion');
+
+---------------------------------------------
+Crear genre asociación
+---------------------------------------------
+
+
+
+
