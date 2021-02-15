@@ -54,11 +54,12 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `netflix`.`chapters` (
   `title` VARCHAR(256) NOT NULL,
   `ref_title` VARCHAR(256) NOT NULL,
+  `ref_material_title` VARCHAR(256) NOT NULL,
   `ref_type` VARCHAR(45) NOT NULL,
   `duration` INT NOT NULL,
   `description` TEXT NOT NULL,
-  PRIMARY KEY (`title`, `ref_title`, `ref_type`),
-  UNIQUE INDEX `chapters_UNIQUE` (`title` ASC, `ref_type` ASC, `ref_title` ASC))
+  PRIMARY KEY (`title`, `ref_title`, `ref_type`, `ref_material_title`),
+  UNIQUE INDEX `chapters_UNIQUE` (`title` ASC, `ref_type` ASC, `ref_title` ASC, `ref_material_title` ASC))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
