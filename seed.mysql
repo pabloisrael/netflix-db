@@ -82,13 +82,26 @@ INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 
 INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie6');
 INSERT INTO `netflix`.`seasons` (`title`, `series_title`) VALUES ('temporada1', 'serie7');
 
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'seasons', '60', 'otra descripcion' );
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'serie1', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada1', 'serie1', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada2', 'serie1', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada2', 'serie1', 'seasons', '60', 'otra descripción');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'serie2', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada1', 'serie2', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada2', 'serie2', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada2', 'serie2', 'seasons', '60', 'otra descripción');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'serie3', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada1', 'serie3', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada2', 'serie3', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada2', 'serie3', 'seasons', '60', 'otra descripción');
+
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada1', 'serie4', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada1', 'serie4', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'temporada2', 'serie4', 'seasons', '60', 'otra descripción');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'temporada2', 'serie4', 'seasons', '60', 'otra descripción');
+
 
 
 ---------------------------------------------
@@ -99,15 +112,15 @@ INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie2');
 INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie3');
 INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie4');
 
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie1', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie1', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie2', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie2', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie1', 'mini-serie1', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie1', 'mini-serie1', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie2', 'mini-serie2', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie2', 'mini-serie2', 'miniseries', '90', 'descripcion');
 
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie3', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie3', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie4', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie3', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie3', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie4', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'mini-serie3', 'miniseries', '90', 'descripcion');
 
 ---------------------------------------------
 Crear genre asociación
