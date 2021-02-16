@@ -126,6 +126,39 @@ INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `r
 Crear genre asociación
 ---------------------------------------------
 
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('accion', 'peli1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('aventura', 'peli1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('romance', 'peli2');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('suspenso', 'peli3');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('terror', 'peli4');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'peli5');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'peli6');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'peli7');
+
+
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('romance', 'serie1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('romance', 'serie2');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('suspenso', 'serie2');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('terror', 'serie3');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie3');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie4');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie5');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie6');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'serie7');
+
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'mini-serie1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('romance', 'mini-serie1');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('accion', 'mini-serie2');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('aventura', 'mini-serie2');
+
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('comedia', 'mini-serie3');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('romance', 'mini-serie3');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('terror', 'mini-serie4');
+INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('suspenso', 'mini-serie4');
+
+
+
 
 
 
