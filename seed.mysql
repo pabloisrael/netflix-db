@@ -119,8 +119,8 @@ INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `r
 
 INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie3', 'mini-serie3', 'miniseries', '90', 'descripcion');
 INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie3', 'mini-serie3', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie4', 'mini-serie3', 'miniseries', '90', 'descripcion');
-INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'mini-serie3', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo1', 'mini-serie4', 'mini-serie4', 'miniseries', '90', 'descripcion');
+INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'mini-serie4', 'miniseries', '90', 'descripcion');
 
 ---------------------------------------------
 Crear genre asociación
