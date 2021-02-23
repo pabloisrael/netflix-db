@@ -14,7 +14,7 @@ INSERT INTO `netflix`.`profiles` (`name`, `email`, `language`, `subtitle_prefere
 INSERT INTO `netflix`.`profiles` (`name`, `email`, `language`, `subtitle_preference`) VALUES ('luciano', 'pablo@gmail.com', 'es', 'es');
 
 ---------------------------------------------
-Crear generos
+# Crear generos
 ---------------------------------------------
 
 INSERT INTO `netflix`.`genres` (`name`) VALUES ('accion');
