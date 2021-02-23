@@ -1,13 +1,13 @@
 
 
 ---------------------------------------------
-Crear accounts
+# Crear accounts
 ---------------------------------------------
 
 INSERT INTO `netflix`.`accounts` (`email`, `password`) VALUES ('pablo@gmail.com', '12345678');
 
 ---------------------------------------------
-Crear profiles
+# Crear profiles
 ---------------------------------------------
 
 INSERT INTO `netflix`.`profiles` (`name`, `email`, `language`, `subtitle_preference`) VALUES ('pablo', 'pablo@gmail.com', 'en', 'en');
@@ -25,7 +25,7 @@ INSERT INTO `netflix`.`genres` (`name`) VALUES ('terror');
 INSERT INTO `netflix`.`genres` (`name`) VALUES ('comedia');
 
 ---------------------------------------------
-Crear materials
+# Crear materials
 ---------------------------------------------
 INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli1', '2018', 'alguna descripción');
 INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('peli2', '2018', 'alguna descripción');
@@ -51,7 +51,7 @@ INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini
 INSERT INTO `netflix`.`materials` (`title`, `year`, `description`) VALUES ('mini-serie4', '2020', 'alguna descripción');
 
 ---------------------------------------------
-Crear peliculas
+# Crear peliculas
 ---------------------------------------------
 INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli1', '120');
 INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli2', '120');
@@ -64,7 +64,7 @@ INSERT INTO `netflix`.`movies` (`material_title`, `duration`) VALUES ('peli7', '
 
 
 ---------------------------------------------
-Crear series
+# Crear series
 ---------------------------------------------
 INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie1');
 INSERT INTO `netflix`.`series` (`material_title`) VALUES ('serie2');
@@ -105,7 +105,7 @@ INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `r
 
 
 ---------------------------------------------
-Crear mini-series
+# Crear mini-series
 ---------------------------------------------
 INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie1');
 INSERT INTO `netflix`.`miniseries` (`material_title`) VALUES ('mini-serie2');
@@ -123,7 +123,7 @@ INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `r
 INSERT INTO `netflix`.`chapters` (`title`, `ref_title`, `ref_material_title`, `ref_type`, `duration`, `description`) VALUES ('capitulo2', 'mini-serie4', 'mini-serie4', 'miniseries', '90', 'descripcion');
 
 ---------------------------------------------
-Crear genre asociación
+# Crear genre asociación
 ---------------------------------------------
 
 INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('accion', 'peli1');
