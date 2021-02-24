@@ -158,6 +158,26 @@ INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES
 INSERT INTO `netflix`.`genres_materials` (`genre_name`, `material_title`) VALUES ('suspenso', 'mini-serie4');
 
 
+---------------------------------------------
+# Crear people
+---------------------------------------------
+
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Robert de Niro');
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Julia Roberts');
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Al Pacino');
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Brad Pitt');
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Margot Robbie');
+INSERT INTO `netflix`.`people` (`name`) VALUES ('Angelina Jolie');
+
+---------------------------------------------
+# Crear filmmaker 
+---------------------------------------------
+
+
+INSERT INTO `netflix`.`filmmakers` (`material_title`, `people_name`) VALUES ('peli1', 'Al Pacino');
+INSERT INTO `netflix`.`filmmakers` (`material_title`, `people_name`) VALUES ('serie1', 'Julia Roberts');
+INSERT INTO `netflix`.`filmmakers` (`material_title`, `people_name`) VALUES ('mini-serie3', 'Angelina Jolie');
+
 
 
 
