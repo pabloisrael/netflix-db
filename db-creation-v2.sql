@@ -440,7 +440,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `netflix`.`playbacks` (
   `profile_name` VARCHAR(256) NOT NULL,
   `ref_title` VARCHAR(256) NOT NULL,
-  `ref_season_title` VARCHAR(256),
+  `ref_season_title` VARCHAR(45),
   `ref_type` VARCHAR(45) NOT NULL,
   `ref_material_title` VARCHAR(256) NOT NULL,
   `minutes` INT NOT NULL,
