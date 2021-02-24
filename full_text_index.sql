@@ -313,10 +313,6 @@ SET GLOBAL innodb_ft_server_stopword_table = 'netflix/my_stopwords';
 
 CREATE FULLTEXT INDEX materials_fulltext_idx ON materials(title, description);
 
-SET GLOBAL innodb_ft_aux_table='netflix/materials';
-
-SELECT * FROM INFORMATION_SCHEMA.INNODB_FT_INDEX_TABLE LIMIT 15;
-
 CREATE FULLTEXT INDEX filmmakers_fulltext_idx ON filmmakers(people_name);
 
 SELECT * FROM materials
