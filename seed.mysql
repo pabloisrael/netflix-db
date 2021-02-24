@@ -187,5 +187,5 @@ INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `min
 INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'peli2', 'movies', '119');
 INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('pablo', 'peli2', 'movies', '60');
 
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo1', 'miniseries', '60');
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo2', 'seasons', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo1', 'chapters', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo2', 'chapters', '60');
