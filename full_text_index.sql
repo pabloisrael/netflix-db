@@ -320,3 +320,18 @@ WHERE MATCH(description, title) AGAINST('serie2' IN NATURAL LANGUAGE MODE)
 UNION
 SELECT materials.* FROM filmmakers INNER JOIN materials ON materials.title = filmmakers.material_title
 WHERE MATCH(people_name) AGAINST('Julia' IN NATURAL LANGUAGE MODE);
+                                        
+                                        
+DELIMITER ;;
+
+CREATE PROCEDURE SEARCHMATERIALS( IN search_params VARCHAR(256) )
+BEGIN
+	SELECT * FROM materials
+	WHERE MATCH(description, title) AGAINST(search_params IN NATURAL LANGUAGE MODE)
+	UNION
+	SELECT materials.* FROM filmmakers INNER JOIN materials ON materials.title = filmmakers.material_title
+	WHERE MATCH(people_name) AGAINST(search_params IN NATURAL LANGUAGE MODE);
+End;
+;;
+
+CALL SEARCHMATERIALS('cacho')
