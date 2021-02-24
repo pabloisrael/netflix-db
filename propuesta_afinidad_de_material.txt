@@ -1,0 +1,7 @@
+1) Obtengo las palabras descriptoras del material visto y calificado positivamente por el perfil.
+2) Obtengo los materiales de un genero no visto por el perfil joineado con los tags.
+3) Filtro los registros del punto 2 con los tags obtenidos en el punto 1.
+4) Agrupo los registros por titulo del material y cuento la cantidad de cada grupo.
+5) Ordeno por el contador del punto 4.
+6) Suponiendo que cada material tiene 3 palabras descriptoras (como Netflix), divido el contador 
+	del punto 4 por 3 y obtengo el porcentaje de afinidad.
