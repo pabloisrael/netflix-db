@@ -440,10 +440,12 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `netflix`.`playbacks` (
   `profile_name` VARCHAR(256) NOT NULL,
   `ref_title` VARCHAR(256) NOT NULL,
+  `ref_season_title` VARCHAR(256),
   `ref_type` VARCHAR(45) NOT NULL,
+  `ref_material_title` VARCHAR(256) NOT NULL,
   `minutes` INT NOT NULL,
   PRIMARY KEY (`profile_name`, `ref_title`, `ref_type`),
-  UNIQUE INDEX `playbacks_UNIQUE` (`profile_name` ASC, `ref_type` ASC, `ref_title` ASC),
+  UNIQUE INDEX `playbacks_UNIQUE` (`profile_name` ASC, `ref_type` ASC, `ref_title` ASC, `ref_material_title` ASC, `ref_season_title` ASC),
   INDEX `profile_name_playbacks_idx` (`profile_name` ASC),
   CONSTRAINT `profile_name_playbacks`
     FOREIGN KEY (`profile_name`)
