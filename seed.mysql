@@ -182,10 +182,12 @@ INSERT INTO `netflix`.`filmmakers` (`material_title`, `people_name`) VALUES ('mi
 ---------------------------------------------
 # Crear reproducciones 
 ---------------------------------------------
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'peli1', 'movies', null, 'peli1', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'peli2', 'movies', null, 'peli2', '119');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('pablo', 'peli2', 'movies', null, 'peli2', '60');
 
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'peli1', 'movies', '60');
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'peli2', 'movies', '119');
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('pablo', 'peli2', 'movies', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo1', 'chapters', null, 'mini-serie1', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo2', 'chapters', null, 'mini-serie1', '89');
 
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo1', 'chapters', '60');
-INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `minutes`) VALUES ('luciano', 'capitulo2', 'chapters', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo1', 'chapters', 'temporada1', 'serie1', '60');
+INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo2', 'chapters', 'temporada1', 'serie1', '90');
