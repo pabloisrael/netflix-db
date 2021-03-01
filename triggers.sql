@@ -27,3 +27,17 @@ CREATE TRIGGER like_playback_trigger
 AFTER INSERT
 ON playbacks FOR EACH ROW
 	CALL ADDTOFAVOURITE( NEW.ref_title, NEW.profile_name );;
+
+
+
+### Creo like
+
+INSERT INTO `netflix`.`likes` (`material_title`, `profile_name`) VALUES ('peli1', 'luciano');
+
+### Checkeo los géneros del material
+select * from genres_materials where material_title = 'peli1';
+
+### Checkeo que se creo los generos favoritos
+
+select * from favourite_genres where profile_name = 'luciano';
+
