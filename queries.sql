@@ -34,5 +34,5 @@ SELECT *
 FROM materials 
 INNER JOIN genres_materials ON genres_materials.material_title = materials.title
 INNER JOIN recommendations ON recommendations.material_title = materials.title AND recommendations.profile_name = "luciano"
-WHERE genres_materials.genre_name = "accion"
+WHERE genres_materials.genre_name = "comedia"
 ORDER BY recommendations.similarity DESC;
