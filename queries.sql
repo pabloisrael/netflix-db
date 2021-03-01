@@ -20,7 +20,7 @@ SELECT * FROM materials_profiles WHERE materials_profiles.profile_name = "lucian
 #Acceso a lista con el material popular
 ----------------------------------------------
 
-SELECT materials.*, COUNT() AS PlaybackCount 
+SELECT materials.*, COUNT(1) AS PlaybackCount 
 FROM materials 
 LEFT JOIN playbacks ON materials.title = playbacks.ref_title
 GROUP BY materials.title
