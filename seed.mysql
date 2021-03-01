@@ -191,3 +191,11 @@ INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref
 
 INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo1', 'chapters', 'temporada1', 'serie1', '60');
 INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref_season_title`, `ref_material_title`, `minutes`) VALUES ('luciano', 'capitulo2', 'chapters', 'temporada1', 'serie1', '90');
+
+
+---------------------------------------------
+# Crear mi lista 
+---------------------------------------------
+INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli1', 'luciano');
+INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli2', 'luciano');
+INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli2', 'pablo');
