@@ -199,3 +199,13 @@ INSERT INTO `netflix`.`playbacks` (`profile_name`, `ref_title`, `ref_type`, `ref
 INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli1', 'luciano');
 INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli2', 'luciano');
 INSERT INTO `netflix`.`materials_profiles` (`material_title`, `profile_name`) VALUES ('peli2', 'pablo');
+
+
+---------------------------------------------
+# Crear recomendaciones
+---------------------------------------------
+INSERT INTO `netflix`.`recommendations` (`material_title`, `profile_name`, `similarity`) VALUES ('peli1', 'luciano', '50');
+INSERT INTO `netflix`.`recommendations` (`material_title`, `profile_name`, `similarity`) VALUES ('peli2', 'luciano', '90');
+INSERT INTO `netflix`.`recommendations` (`material_title`, `profile_name`, `similarity`) VALUES ('peli1', 'pablo', '70');
+INSERT INTO `netflix`.`recommendations` (`material_title`, `profile_name`, `similarity`) VALUES ('peli3', 'pablo', '60');
+INSERT INTO `netflix`.`recommendations` (`material_title`, `profile_name`, `similarity`) VALUES ('peli4', 'pablo', '65');
